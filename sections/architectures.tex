@@ -1,0 +1,115 @@
+\section{Arquitecturas emocionales para agentes inteligentes}
+
+La incorporación de emociones dentro de agentes inteligentes requiere arquitecturas capaces de integrar razonamiento cognitivo, estados afectivos y comportamiento adaptativo. A lo largo de los años se han desarrollado múltiples propuestas orientadas a combinar procesos deliberativos tradicionales con mecanismos emocionales inspirados en teorías psicológicas y cognitivas.
+
+Muchas de estas arquitecturas parten del modelo BDI (\textit{Beliefs, Desires and Intentions}), ampliamente utilizado en sistemas multiagente debido a su capacidad para representar procesos racionales de decisión. Sin embargo, las limitaciones de los agentes puramente racionales han motivado la aparición de extensiones afectivas capaces de incorporar emociones dentro del razonamiento del agente.
+
+\subsection{Arquitectura BDI}
+
+La arquitectura BDI constituye uno de los modelos cognitivos más utilizados en agentes inteligentes. Este enfoque representa el estado interno de un agente mediante tres componentes fundamentales:
+
+\begin{itemize}
+    \item \textbf{Beliefs}: información y conocimiento que el agente posee sobre el entorno.
+    
+    \item \textbf{Desires}: objetivos o estados que el agente desea alcanzar.
+    
+    \item \textbf{Intentions}: planes y acciones que el agente decide ejecutar.
+\end{itemize}
+
+El proceso deliberativo de un agente BDI consiste en actualizar sus creencias a partir de la percepción del entorno, seleccionar objetivos relevantes y generar intenciones que permitan satisfacer dichos objetivos.
+
+A pesar de su gran utilidad, el modelo BDI tradicional presenta ciertas limitaciones cuando se aplica a entornos sociales complejos o interacciones humanas. En particular, este modelo asume un comportamiento fundamentalmente racional, ignorando el papel que desempeñan las emociones en la toma de decisiones humanas.
+
+Como consecuencia, numerosos trabajos han propuesto extensiones emocionales del modelo BDI orientadas a incorporar estados afectivos dentro del razonamiento deliberativo.
+
+\subsection{Arquitectura EBDI}
+
+Una de las extensiones más conocidas del modelo BDI es la arquitectura EBDI (\textit{Emotional Belief-Desire-Intention}), propuesta para integrar emociones dentro del ciclo cognitivo de los agentes \cite{jiang2007ebdi}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.62\textwidth]{figures/ebdi_architechture.png}
+    \caption{Arquitectura EBDI para agentes emocionales.\cite{jiang2007ebdi}}
+    \label{fig:ebdi_architecture}
+\end{figure}
+
+En este modelo \ref{fig:ebdi_architecture}, las emociones se incorporan como un componente adicional que influye directamente sobre la selección de objetivos, la priorización de planes y la toma de decisiones. De esta forma, el comportamiento del agente no depende únicamente de procesos racionales, sino también de su estado emocional actual.
+
+La arquitectura EBDI utiliza mecanismos inspirados en teorías de appraisal para generar emociones a partir de eventos percibidos por el agente. Estas emociones pueden clasificarse en emociones primarias y secundarias, dependiendo del nivel de procesamiento cognitivo asociado.
+
+De forma simplificada, el ciclo de funcionamiento de un agente EBDI puede describirse mediante las siguientes etapas:
+
+\begin{enumerate}
+    \item Percepción del entorno.
+    \item Actualización de creencias.
+    \item Evaluación emocional de eventos.
+    \item Generación de deseos e intenciones.
+    \item Selección de acciones.
+\end{enumerate}
+
+La principal ventaja de esta arquitectura consiste en permitir comportamientos más adaptativos y realistas, especialmente en entornos dinámicos donde las emociones pueden modificar prioridades y estrategias de actuación.
+
+\subsection{Arquitectura WASABI}
+
+Otra propuesta destacada dentro de la computación afectiva es la arquitectura WASABI, desarrollada por Becker-Asano y Wachsmuth para modelar emociones dinámicas en humanos virtuales \cite{becker2009wasabi}.
+
+El sistema WASABI combina emociones primarias y secundarias utilizando representaciones dimensionales basadas en el modelo PAD. A diferencia de otros enfoques más discretos, esta arquitectura permite representar transiciones emocionales continuas y estados afectivos complejos.
+
+Uno de los aspectos más relevantes de WASABI es la diferenciación entre emociones de corta duración y estados de ánimo persistentes. Las emociones instantáneas pueden modificar temporalmente el estado afectivo del agente, mientras que el estado de ánimo evoluciona de manera más lenta y estable.
+
+En este modelo, las emociones se representan mediante espacios tridimensionales continuos:
+
+\begin{equation}
+E = (P, A, D)
+\end{equation}
+
+donde:
+
+\begin{itemize}
+    \item $P$ representa Pleasure.
+    \item $A$ representa Arousal.
+    \item $D$ representa Dominance.
+\end{itemize}
+
+La utilización de espacios emocionales continuos facilita la simulación de comportamientos emocionales más naturales y graduales, especialmente en personajes virtuales y sistemas interactivos.
+
+\subsection{Modelos afectivos modernos}
+
+En los últimos años han surgido nuevas propuestas orientadas a integrar emociones, cognición, memoria y comportamiento social dentro de arquitecturas más complejas y adaptativas \cite{alfonso2021affect}.
+
+Estos modelos modernos buscan superar algunas limitaciones presentes en arquitecturas tradicionales mediante:
+
+\begin{itemize}
+    \item Integración de memoria emocional.
+    \item Adaptación cultural y contextual.
+    \item Aprendizaje emocional dinámico.
+    \item Razonamiento social avanzado.
+    \item Representación híbrida de emociones.
+\end{itemize}
+
+Asimismo, investigaciones recientes exploran la utilización de modelos híbridos que combinan representación simbólica, lógica difusa, aprendizaje automático y sistemas probabilísticos para mejorar la simulación emocional en agentes inteligentes.
+
+El desarrollo de agentes conversacionales avanzados y modelos generativos de Inteligencia Artificial también ha impulsado el interés por arquitecturas afectivas capaces de mantener interacciones más humanas, naturales y emocionalmente coherentes.
+
+\subsection{Comparación entre arquitecturas}
+
+Las distintas arquitecturas emocionales presentan enfoques diferentes respecto a la representación emocional, el razonamiento afectivo y la toma de decisiones.
+
+\begin{table}[H]
+\centering
+\caption{Comparación entre arquitecturas emocionales}
+\begin{tabular}{p{3cm} p{3cm} p{3cm} p{3cm}}
+\toprule
+\textbf{Arquitectura} & \textbf{Modelo emocional} & \textbf{Representación} & \textbf{Aplicaciones} \\
+\midrule
+BDI & No emocional & Simbólica & Sistemas racionales \\
+EBDI & Appraisal & Emociones discretas & Agentes sociales \\
+WASABI & PAD & Dimensional continua & Humanos virtuales \\
+Modelos modernos & Híbrida & Mixta & IA social avanzada \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Cada arquitectura presenta ventajas y limitaciones dependiendo del tipo de aplicación y del nivel de complejidad emocional requerido. Mientras que modelos discretos como OCC facilitan la interpretación semántica de emociones específicas, los enfoques dimensionales permiten representar transiciones emocionales más suaves y dinámicas.
+
+Actualmente, la tendencia principal en computación afectiva consiste en desarrollar arquitecturas híbridas capaces de integrar razonamiento cognitivo, representación emocional continua y adaptación social dentro de sistemas inteligentes complejos.

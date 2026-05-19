@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+
+% ------------------------------------------------
+%                PACKAGES
+% ------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\usepackage{setspace}
+\setstretch{1.15}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=red,
+    urlcolor=blue
+}
+
+\usepackage[
+backend=biber,
+style=ieee
+]{biblatex}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning, babel}
+\usepackage{float}
+
+\addbibresource{references.bib}
+
+% ------------------------------------------------
+%                TITLE
+% ------------------------------------------------
+
+\title{
+    % Primer logo (Universidad) - Bajamos el tamaño a 0.25 para que quepan bien juntos
+    \includegraphics[width=0.38\textwidth]{figures/upv_logo.png}
+    \hspace{1.5cm} % Esto añade un espacio de 1.5 cm entre los dos logos
+    % Segundo logo (Escuela)
+    \includegraphics[width=0.32\textwidth]{figures/logo_etsinf_valenciano_grisUPV.png}\\[1.5cm]
+    \Huge Aplicación de Emociones en Agentes Inteligentes\\
+    \vspace{0.5cm}
+    \Large Modelos Computacionales y Arquitecturas Afectivas
+}
+
+\author{
+    Alejandro Angulo González \\
+    \texttt{aanggon1@etsinf.upv.es}
+    \and
+    Josep Beneyto Pla \\
+    \texttt{jbenpla@etsinf.upv.es}
+    \and
+    Andreu Viguer Bueno \\
+    \texttt{avigbue@etsinf.upv.es}
+    \and
+    Xuwei Zhao \\
+    \texttt{xzhao5@etsinf.upv.es}
+}
+
+\date{
+    \vspace{3cm}    
+    Universitat Politècnica de València (UPV)\\
+    Escuela Técnica Superior de Ingeniería Informática (ETSINF)\\[1cm]
+    \today
+}
+
+% ------------------------------------------------
+%                DOCUMENT
+% ------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\newpage
+
+\begin{abstract}
+Este trabajo presenta un recorrido sobre los principales modelos computacionales utilizados para la incorporación de emociones en agentes inteligentes. Se analizan las teorías psicológicas que fundamentan la computación afectiva, los distintos modelos dimensionales y de appraisal, así como distintas arquitecturas afectivas basadas en agentes BDI. Además, se estudian propuestas relacionadas con representación emocional, lógica difusa, adaptación cultural y sistemas multiagente emocionales.
+
+\vspace{0.5cm} % Un pequeño salto de línea para separarlo del texto
+\noindent \textbf{Palabras clave:} Agentes Inteligentes, Computación Afectiva, Arquitecturas BDI, Emociones Artificiales, Sistemas Normativos, Lógica Difusa.
+\end{abstract}
+
+% IMPORTANTE: Aquí hemos quitado el \newpage que tenías antes
+
+\tableofcontents
+
+\newpage % Este \newpage sí lo dejamos para que la Introducción empiece en una hoja nueva
+
+% ------------------------------------------------
+%                SECTIONS
+% ------------------------------------------------
+
+\input{sections/introduction}
+
+\input{sections/theoretical_foundations}
+
+\input{sections/affective_agents}
+
+\input{sections/architectures}
+
+\input{sections/emotion_representation}
+
+\input{sections/normative_agents}
+
+\input{sections/discussion}
+
+\input{sections/conclusion}
+
+% ------------------------------------------------
+%                BIBLIOGRAPHY
+% ------------------------------------------------
+
+\newpage
+
+\nocite{*}
+\printbibliography
+
+\end{document}

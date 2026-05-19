@@ -1,0 +1,81 @@
+\section{Representación computacional de emociones}
+
+Uno de los principales desafíos dentro de la computación afectiva consiste en representar emociones de forma computacional. A diferencia de otros procesos cognitivos más estructurados, las emociones poseen características subjetivas, dinámicas y dependientes del contexto, lo que dificulta su modelado mediante técnicas tradicionales de Inteligencia Artificial.
+
+A lo largo de los años se han desarrollado distintos enfoques orientados a representar estados emocionales dentro de agentes inteligentes. Estas representaciones pueden clasificarse principalmente en modelos discretos, dimensionales e híbridos.
+
+\subsection{Representación discreta de emociones}
+
+Los modelos discretos representan las emociones como categorías diferenciadas y semánticamente interpretables. Este enfoque se basa generalmente en teorías psicológicas que consideran la existencia de emociones básicas universales.
+
+Uno de los modelos más utilizados en computación afectiva es el modelo OCC, donde emociones como alegría, miedo, orgullo o vergüenza se generan a partir de procesos de evaluación cognitiva (\textit{appraisal}) asociados a eventos, acciones u objetos \cite{occ2009revisited}.
+
+La principal ventaja de los modelos discretos consiste en su interpretabilidad semántica, ya que cada emoción posee un significado claramente definido. Esto facilita la implementación de comportamientos emocionales comprensibles en agentes conversacionales, personajes virtuales y sistemas interactivos.
+
+Sin embargo, este enfoque presenta ciertas limitaciones relacionadas con la dificultad para representar transiciones emocionales graduales o estados afectivos ambiguos.
+
+\subsection{Representación dimensional}
+
+Los modelos dimensionales representan emociones mediante espacios continuos definidos por distintas dimensiones emocionales. Este enfoque permite modelar emociones como combinaciones de variables numéricas continuas, facilitando la simulación de cambios emocionales dinámicos.
+
+Uno de los modelos dimensionales más utilizados es PAD (\textit{Pleasure-Arousal-Dominance}), donde cada estado emocional se representa mediante tres dimensiones principales:
+
+\begin{equation}
+E = (P, A, D)
+\end{equation}
+
+donde:
+
+\begin{itemize}
+    \item $P$ representa el nivel de placer o desagrado.
+    \item $A$ representa el nivel de activación emocional.
+    \item $D$ representa el grado de dominancia o control.
+\end{itemize}
+
+Este tipo de representación permite describir emociones complejas mediante posiciones dentro de un espacio continuo multidimensional. Por ejemplo, emociones como entusiasmo presentan valores altos de placer y activación, mientras que tristeza se asocia normalmente a valores bajos de activación y placer.
+
+Los modelos dimensionales resultan especialmente útiles en sistemas dinámicos, personajes virtuales y simulaciones sociales, ya que permiten representar transiciones emocionales suaves y continuas.
+
+\subsection{Lógica difusa y emociones}
+
+Debido a la naturaleza subjetiva e imprecisa de las emociones humanas, numerosos trabajos han incorporado técnicas de lógica difusa (\textit{Fuzzy Logic}) para modelar incertidumbre emocional y grados de intensidad afectiva.
+
+En estos modelos, las emociones no se representan como estados absolutos, sino mediante funciones de pertenencia que indican el grado en que un agente experimenta una determinada emoción.
+
+Una representación simplificada de pertenencia difusa puede expresarse mediante:
+
+\begin{equation}
+\mu_{fear}(x) \in [0,1]
+\end{equation}
+
+donde $\mu_{fear}(x)$ representa el grado de intensidad asociado a la emoción de miedo ante una determinada situación.
+
+Diversos trabajos recientes han utilizado sistemas difusos para combinar evaluación cognitiva (\textit{appraisal}), intensidad emocional y adaptación contextual. Por ejemplo, modelos orientados a entornos multiculturales emplean reglas de inferencia difusa para evaluar eventos y generar emociones imprecisas, las cuales son posteriormente 'des-difusificadas' (\textit{defuzzified}) y proyectadas sobre dimensiones continuas como el Placer y el Arousal \cite{taverner2021fuzzy}.
+
+\subsection{Representación cultural de emociones}
+
+Uno de los problemas más relevantes en computación afectiva es la influencia cultural sobre la interpretación y expresión emocional. Diferentes culturas pueden expresar, percibir y valorar emociones de manera distinta, lo que dificulta la construcción de modelos emocionales universales.
+
+Investigaciones recientes han propuesto modelos multidimensionales culturalmente adaptados capaces de modificar la representación emocional en función del contexto sociocultural \cite{taverner2023multidimensional}.
+
+Estos enfoques permiten ajustar parámetros emocionales relacionados con:
+
+\begin{itemize}
+    \item Intensidad emocional.
+    \item Expresión afectiva.
+    \item Valoración social de emociones.
+    \item Interpretación contextual.
+    \item Normas culturales.
+\end{itemize}
+
+La incorporación de adaptación cultural resulta especialmente importante en sistemas conversacionales globales, simulaciones sociales y agentes virtuales diseñados para interactuar con usuarios de diferentes entornos culturales.
+
+\subsection{Modelos híbridos}
+
+Actualmente, muchos sistemas afectivos utilizan modelos híbridos que combinan representaciones discretas, dimensionales y difusas con el objetivo de aprovechar las ventajas de cada enfoque.
+
+Por ejemplo, arquitecturas híbridas como WASABI \cite{becker2009wasabi} pueden utilizar un appraisal cognitivo para generar emociones discretas (diferenciando entre primarias y secundarias), mientras que posteriormente emplean espacios dimensionales PAD para representar la intensidad y la evolución continua del estado de ánimo.
+
+Asimismo, algunos modelos modernos integran técnicas de aprendizaje automático y representación probabilística para adaptar dinámicamente los estados emocionales del agente en función de la experiencia y del entorno.
+
+Estos enfoques híbridos constituyen actualmente una de las líneas de investigación más activas dentro de la computación afectiva, especialmente en aplicaciones relacionadas con Inteligencia Artificial social, robótica afectiva y agentes conversacionales avanzados.

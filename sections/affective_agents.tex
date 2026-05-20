@@ -1,26 +1,18 @@
 \section{Computación afectiva y agentes emocionales}
 
-La computación afectiva (\textit{Affective Computing}) es un área de investigación interdisciplinar centrada en el desarrollo de sistemas capaces de reconocer, interpretar, modelar y simular emociones humanas. Este campo ha adquirido una gran relevancia dentro de la Inteligencia Artificial, especialmente en aplicaciones relacionadas con interacción humano-computador, robótica social y sistemas multiagente.
+La computación afectiva (\textit{Affective Computing}) es un área de investigación interdisciplinar centrada en el desarrollo de sistemas capaces de reconocer, interpretar, modelar y simular emociones humanas. Este campo ha adquirido una gran relevancia dentro de la Inteligencia Artificial, especialmente en aplicaciones relacionadas con interacción humano-computador, robótica social y sistemas multiagente. \cite{picard2000affective}.
 
-El objetivo principal de la computación afectiva no consiste únicamente en representar emociones de manera artificial, sino también en permitir que los sistemas inteligentes adapten su comportamiento en función del estado emocional del entorno o de los usuarios con los que interactúan. De esta manera, los agentes afectivos buscan proporcionar interacciones más naturales, creíbles y socialmente aceptables.
+El objetivo principal de la computación afectiva no consiste únicamente en representar emociones de manera artificial, sino también en permitir que los sistemas inteligentes adapten su comportamiento en función del estado emocional del entorno o de los usuarios con los que interactúan. De esta manera, los agentes afectivos buscan ajustar sus respuestas según el contexto emocional de la interacción y el estado de los usuarios.
 
 \subsection{Agentes emocionales}
 
 Los agentes emocionales son agentes inteligentes capaces de incorporar estados afectivos dentro de sus procesos internos de razonamiento y toma de decisiones. A diferencia de los agentes puramente racionales, estos sistemas consideran que las emociones pueden modificar prioridades, alterar comportamientos y afectar a la selección de acciones.
 
-En muchos modelos tradicionales de agentes, la toma de decisiones se basa únicamente en objetivos racionales y mecanismos lógicos de planificación. Sin embargo, diversos estudios han mostrado que las emociones desempeñan un papel fundamental en la cognición humana, permitiendo reducir la complejidad de ciertos procesos deliberativos y facilitando respuestas rápidas en situaciones dinámicas o inciertas.
+En muchos modelos tradicionales de agentes, la toma de decisiones se basa únicamente en objetivos racionales y mecanismos lógicos de planificación. Diversos trabajos en neurociencia y psicología cognitiva muestran que los estados emocionales influyen directamente sobre la atención, la memoria y la toma de decisiones.
 
-La incorporación de emociones en agentes inteligentes proporciona múltiples ventajas:
+La incorporación de emociones permite que los agentes modifiquen prioridades y respuestas en función de cambios producidos durante la interacción. En arquitecturas afectivas como WASABI o EBDI, los estados emocionales pueden modificar prioridades, alterar decisiones o influir sobre la manera en que el agente interactúa con otros usuarios y agentes del entorno.
 
-\begin{itemize}
-    \item Mejora de la interacción humano-computador.
-    \item Incremento de la credibilidad y realismo de los agentes.
-    \item Adaptación dinámica al entorno.
-    \item Priorización de objetivos y toma de decisiones.
-    \item Simulación más realista de comportamientos sociales.
-\end{itemize}
-
-Además, las emociones permiten representar fenómenos sociales complejos como cooperación, empatía, frustración, culpa o confianza, especialmente relevantes en sistemas multiagente y simulaciones sociales\cite{argente2022normative}.
+Además, las emociones permiten representar fenómenos sociales complejos como cooperación, empatía, frustración, culpa o confianza, especialmente relevantes en sistemas multiagente y simulaciones sociales \cite{argente2022normative}.
 
 \subsection{Relación entre emociones y toma de decisiones}
 
@@ -28,21 +20,11 @@ Las emociones influyen directamente sobre numerosos procesos cognitivos humanos,
 
 En agentes inteligentes, esta relación entre emoción y razonamiento ha motivado el desarrollo de arquitecturas cognitivas capaces de integrar estados emocionales dentro de los mecanismos deliberativos. Un ejemplo relevante es la arquitectura EBDI, que amplía el modelo BDI clásico incorporando emociones primarias y secundarias en el proceso de toma de decisiones \cite{jiang2007ebdi}.
 
-De forma general, las emociones pueden influir sobre un agente en distintos niveles:
-
-\begin{itemize}
-    \item Modificación de prioridades entre objetivos.
-    \item Filtrado de información relevante.
-    \item Selección de planes y acciones.
-    \item Adaptación social y contextual.
-    \item Evaluación de riesgos y recompensas.
-\end{itemize}
-
-Gracias a ello, los agentes afectivos pueden actuar de manera más flexible y adaptativa en entornos complejos, especialmente cuando deben interactuar con humanos u otros agentes autónomos.
+En la práctica, estos mecanismos permiten que un agente pueda priorizar determinada información, modificar objetivos o seleccionar acciones distintas dependiendo del estado emocional generado durante la interacción. Esto resulta especialmente útil en entornos dinámicos, donde un agente no siempre dispone del tiempo o de la información necesaria para realizar procesos deliberativos complejos.
 
 \subsection{Aplicaciones de la computación afectiva}
 
-Actualmente, la computación afectiva posee aplicaciones en numerosos ámbitos tecnológicos y científicos. Entre las áreas más relevantes destacan:
+La computación afectiva se utiliza actualmente en ámbitos muy diversos, especialmente en sistemas donde la interacción con personas resulta importante. Las aplicaciones de la computación afectiva son muy variadas y dependen del tipo de interacción que el sistema mantiene con usuarios u otros agentes. Algunas de las aplicaciones más habituales son:
 
 \begin{itemize}
     \item \textbf{Asistentes virtuales y agentes conversacionales}: sistemas capaces de detectar emociones del usuario y adaptar sus respuestas.
@@ -62,4 +44,6 @@ A pesar de los avances alcanzados, la modelización computacional de emociones c
 
 Además, muchos sistemas afectivos actuales utilizan representaciones emocionales limitadas o reducidas, incapaces de capturar completamente la complejidad emocional humana. Otro desafío importante es la validación experimental de los modelos emocionales, ya que evaluar comportamientos afectivos de manera objetiva resulta especialmente complejo.
 
-Por este motivo, gran parte de la investigación actual se centra en desarrollar modelos emocionales más dinámicos, adaptativos y culturalmente conscientes\cite{taverner2021fuzzy,taverner2023multidimensional}; así como arquitecturas capaces de integrar razonamiento cognitivo, emociones y comportamiento social dentro de un mismo sistema inteligente.
+Por este motivo, gran parte de la investigación actual se centra en desarrollar modelos emocionales más dinámicos, adaptativos y culturalmente conscientes \cite{taverner2021fuzzy,taverner2023multidimensional}; así como arquitecturas capaces de integrar razonamiento cognitivo, emociones y comportamiento social dentro de un mismo sistema inteligente.
+
+Además, muchos modelos actuales siguen dependiendo de conjuntos emocionales relativamente pequeños y simplificados, lo que dificulta representar fenómenos afectivos ambiguos o contradictorios presentes en interacciones humanas reales.
